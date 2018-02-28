@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 114131954072951052}
   - component: {fileID: 61275728877711120}
   - component: {fileID: 50894954075189488}
+  - component: {fileID: 114642614425633584}
   m_Layer: 0
   m_Name: NewPlayer
   m_TagString: Player
@@ -57,8 +58,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4796377899138362}
   - component: {fileID: 212842549519938256}
-  - component: {fileID: 114265375892163198}
-  - component: {fileID: 114533589998226022}
   m_Layer: 0
   m_Name: G
   m_TagString: Untagged
@@ -74,7 +73,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4135164399677920}
-  - component: {fileID: 114769613957720578}
+  - component: {fileID: 114497186149787682}
   m_Layer: 9
   m_Name: RotatePoint
   m_TagString: Untagged
@@ -311,39 +310,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpd: 8
-  PlayerAnimator: {fileID: 95165105786676426}
-  HairAnimator: {fileID: 95927371169550676}
   Xaxis: 0
   Yaxis: 0
---- !u!114 &114265375892163198
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1574781263753982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90c9a005de6d28d4882419a7096f4c15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  previousMove: {x: 0, y: 0}
+  GunPos: {fileID: 4796377899138362}
   bullet: {fileID: 1401881420232020, guid: f73ae24e834143447991a217bb8870bd, type: 2}
   shootSpd: 15
---- !u!114 &114533589998226022
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1574781263753982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ff4e3e73a180d04ebded00ca97f431e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotateSpd: 5
-  tTarget: {fileID: 4030766882385772}
-  fRadius: 3
-  pivot: {fileID: 4030766882385772}
---- !u!114 &114769613957720578
+--- !u!114 &114497186149787682
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -351,9 +324,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 1585906141922464}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cb9a98d596261f4c822eea836a932a4, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ff4e3e73a180d04ebded00ca97f431e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotateSpd: 5
+  myGun: {fileID: 4796377899138362}
+--- !u!114 &114642614425633584
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1558890560536078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e58aa0c80b57c5045b37c9762e3ee4c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lockCursor: 1
+  zoomSpeed: 1
+  targetOrtho: 0
+  smoothSpeed: 2
+  minOrtho: 1
+  maxOrtho: 20
 --- !u!124 &124587230804176160
 Behaviour:
   m_ObjectHideFlags: 1
