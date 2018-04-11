@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour {
     //Movement
-    [Range(0, 10)] public float movementSpd = 5;
+    [Range(0, 10)] public float movementSpd = 2;
     public float Xaxis;
     public float Yaxis;
     public Vector2 previousMove;
@@ -32,7 +32,7 @@ public class PlayerBehaviour : MonoBehaviour {
         Xaxis = Input.GetAxis("Horizontal");
 
         Vector2 moveVector = new Vector2(Xaxis, Yaxis);
-        transform.Translate(moveVector * Time.deltaTime * movementSpd);
+        transform.Translate(moveVector * Time.fixedDeltaTime * movementSpd);
     }
 
     public void PlayerShooting()

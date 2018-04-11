@@ -7,6 +7,7 @@ TagManager:
   - Bullet
   - Wall
   - Hair
+  - Front_Back
   layers:
   - Default
   - TransparentFX
@@ -41,6 +42,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 1290449333
+    locked: 0
+  - name: Further
+    uniqueID: 3366027963
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
@@ -49,4 +56,10 @@ TagManager:
     locked: 0
   - name: Hair
     uniqueID: 2270404259
+    locked: 0
+  - name: Closer
+    uniqueID: 2562457303
+    locked: 0
+  - name: Front
+    uniqueID: 2497941661
     locked: 0
