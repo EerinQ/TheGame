@@ -2,29 +2,89 @@
 	{
 		"id": 0,
 		"title": "Steel Gloves",
-		"value": 6,
+		"type": "Wooden",
+		"rank": "D",
 		"stats":{
 			"power": 1,
 			"defence": 5,
 			"vitality": 2
 		},
-		"description": "Gloves that made from steel, Yea.",
-		"stackable": true,
+		"value": 6,
 		"rarity": 2,
+		"stackable": true,
+		"isForProduction": true,
+		"isFuel": true,
+		"isForWeapon": false,
+		"isForBuilding": true,
+		"canConvertToEnergy": false,
+		"isFood": false,
+		"description": "Gloves that made from steel, Yea.",
 		"slug": "steel_gloves"
 	},
 	{
 		"id": 1,
 		"title": "The Great Stick",
-		"value": 543,
+		"type": "Wooden",
+		"rank": "D",
 		"stats":{
 			"power": 156,
 			"defence": 2,
 			"vitality": 55
 		},
-		"description": "It's a stick that's pretty great. Cool.",
-		"stackable": false,
+		"value": 543,
 		"rarity": 6,
+		"stackable": false,
+		"isForProduction": true,
+		"isFuel": true,
+		"isForWeapon": false,
+		"isForBuilding": true,
+		"canConvertToEnergy": false,
+		"isFood": false,
+		"description": "It's a stick that's pretty great. Cool.",
 		"slug": "the_great_stick"
+	},
+	{
+		"id": 2,
+		"title": "Borken Wood",
+		"type": "Wooden",
+		"rank": "D",
+		"stats":{
+			"power": 156,
+			"defence": 2,
+			"vitality": 55
+		},
+		"value": 1,
+		"rarity": 2,
+		"stackable": true,
+		"isForProduction": true,
+		"isFuel": true,
+		"isForWeapon": false,
+		"isForBuilding": true,
+		"canConvertToEnergy": false,
+		"isFood": false,
+		"description": "A pile of broken wood, easy to set on fire.",
+		"slug": "broken_wood"
+	},
+	{
+		"id": 3,
+		"title": "Enery Fruit",
+		"type": "Food",
+		"rank": "D",
+		"stats":{
+			"power": 0,
+			"defence": 0,
+			"vitality": 0
+		},
+		"value": 20,
+		"rarity": 2,
+		"stackable": true,
+		"isForProduction": false,
+		"isFuel": false,
+		"isForWeapon": false,
+		"isForBuilding": false,
+		"canConvertToEnergy": true,
+		"isFood": true,
+		"description": "It looks not, but it's the energy fruit for now.",
+		"slug": "energy_fruit"
 	}
 ]

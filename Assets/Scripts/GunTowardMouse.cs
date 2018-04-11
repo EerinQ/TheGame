@@ -5,8 +5,10 @@ using UnityEngine;
 public class GunTowardMouse : MonoBehaviour {
     public float rotateSpd = 5f;
     public Transform myGun;
+
     // Use this for initialization
     void Start () {
+
 	}
 	
 	// Update is called once per frame
